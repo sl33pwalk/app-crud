@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode styles */
+.dark {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --border-color: #2d3748;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark a {
+    color: #e9eff3;
+}
+
+.dark table {
+    border-color: var(--border-color);
+}
+
+.dark th,
+.dark td {
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark th {
+    background-color: #2d3748;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
